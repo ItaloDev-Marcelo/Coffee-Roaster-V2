@@ -7,7 +7,7 @@ const NavLink = ({path, name, handleNav, type}: NavlinkProps) => {
       {type ? 
       <li onClick={handleNav} className='my-3 pr-14 lg:pr-0 lg:my-0 lg:mx-2 font-semibold text-gray-400
        text-lg cursor-pointer hover:text-gray-600 '><Link to={path}>{name}</Link></li> :
-     <li  className='my-2 lg:my-0 lg:mx-4 font-semibold text-gray-400 cursor-pointer hover:text-gray-600'><Link to={path}>{name}</Link></li>}
+     <li  className='my-2 lg:my-0 lg:mx-4 font-semibold text-gray-400 2xl:text-lg cursor-pointer hover:text-gray-600'><Link to={path}>{name}</Link></li>}
     </>
   )
 }
