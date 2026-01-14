@@ -10,10 +10,10 @@ const NavBar = ({handleNav, type}:NavBarProps ) => {
      fixed top-0 lg:relative flex-col items-start justify-start lg:px-15  md:flex-row md:justify-between md:items-center'>
         <a href='#' className='hidden lg:flex'><img src={Logo} alt='logo' className='w-42.5'/> </a> 
 
-       <div>
+       <div className='p-2'>
          <button onClick={handleNav} className='lg:hidden'><img src={close} alt='close' /></button>
-         <ul  className='flex flex-col items-center  justify-center 
-           mt-25 lg:mt-0  w-82.5 lg:w-full  md:flex-row md:items-start'>
+         <ul  className='flex flex-col items-center  justify-center w-screen
+           mt-25 lg:mt-0  lg:w-90 px-2  md:flex-row md:items-start'>
             {
                LinkRoutes.map((link, index) => (
                  <NavLink key={index} name={link.name} path={link.path} handleNav={handleNav} type={type} />
