@@ -8,7 +8,7 @@ const NavBar = ({handleNav, type}:NavBarProps ) => {
   return (
     <nav className='bg-gray-200  lg:bg-transparent w-full h-screen md:h-25 p-5 flex
      fixed top-0 lg:relative flex-col items-start justify-start
-      lg:px-15 2xl:mt-3 2xl:px-12  md:flex-row md:justify-between md:items-center'>
+      lg:px-12 2xl:mt-3 2xl:px-12  md:flex-row md:justify-between md:items-center'>
         <a href='#' className='hidden lg:flex '><img src={Logo} alt='logo' className='w-42.5 2xl:w-50 2xl:pl-3'/> </a> 
 
        <div className='p-2'>
