@@ -11,7 +11,7 @@ const CreateYourPlan = () => {
     <>
        <main className='flex flex-col justify-center items-center '>
                 <HeroContainer photoType={HeroBank.Plan} type='Plan'
-                 title={title} subtitle={subtitle} btn='' btnActive={false} />
+                 title={title} subtitle={subtitle}  btnActive={false} />
         </main>
     </>
   )

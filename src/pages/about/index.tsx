@@ -12,7 +12,7 @@ const AboutUs = () => {
     <>
       <main className='flex flex-col justify-center items-center '>
           <HeroContainer photoType={HeroBank.About} type='About'
-           title={title} subtitle={subtitle} btn='create your plan' btnActive={false} />
+           title={title} subtitle={subtitle} btnActive={false} />
     </main>
     </>
   )
