@@ -15,7 +15,6 @@ export type HeroContainerProps = {
     photoType: HeroImages,
     title: string,
     subtitle: string,
-    btn: string,
     btnActive: boolean
 } & HeroType
 
