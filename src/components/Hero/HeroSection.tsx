@@ -1,7 +1,8 @@
 import type { HeroContainerProps } from '../../types/hero.type'
+import Button from '../Plan-Button/Button';
 import Hero from './Hero'
 
-const HeroContainer = ({photoType, type, title, subtitle, btn,btnActive}:HeroContainerProps) => {
+const HeroContainer = ({photoType, type, title, subtitle,btnActive}:HeroContainerProps) => {
 
   let resultType = '';
   
@@ -23,7 +24,7 @@ const HeroContainer = ({photoType, type, title, subtitle, btn,btnActive}:HeroCon
          <div className={resultType}>
             <h1 className='mb-5 text-2xl md:text-3xl lg:text-6xl font-bold'>{title}</h1>
             <p className='my-2 w-65 md:w-125 lg:w-97 opacity-75'>{subtitle}</p>
-            {btnActive && <button className='mt-5 bg-blue-400 p-2 w-40 rounded-sm'>{btn}</button>}
+            {btnActive && <Button/>}
          </div>
     </section>
   )
