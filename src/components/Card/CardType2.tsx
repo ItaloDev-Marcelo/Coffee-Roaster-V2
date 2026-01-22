@@ -10,9 +10,9 @@ export type CardType2Props = {
 
 const CardType2 = ({num, title, description, hasAButton}:CardType2Props) => {
   return (
-    <article className='w-[330px] lg:w-[300px]  my-4 lg:my-0 lg:mx-0'>
+    <article className='w-82.5 lg:w-75  my-4 lg:my-0 lg:mx-0'>
          <h3 className='font-bold text-[7rem] lg:text-[6.5rem]'>{num}</h3>
-         <h4 className="text-2xl font-semibold w-[150px] lg:w-[300px]">{title}</h4>
+         <h4 className="text-2xl font-semibold w-37.5 lg:w-75">{title}</h4>
          <p className="my-5">{description}</p>
          {hasAButton && <Button/>}
     </article>
