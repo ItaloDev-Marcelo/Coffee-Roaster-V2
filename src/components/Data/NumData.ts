@@ -13,7 +13,7 @@ export const WhiteData = [
         num: '01',
         title: t1,
         description: d1,
-        hasAButton: false
+        hasAButton: true
     },
      {
         num: '02',
@@ -25,7 +25,7 @@ export const WhiteData = [
         num: '03',
         title: t3,
         description: d3,
-        hasAButton: true
+        hasAButton: false
     }
 ]
 
