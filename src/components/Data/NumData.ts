@@ -33,17 +33,19 @@ export const BlackData = [
     {
         num: '01',
         title: t1,
-        description: d1
+        description: d1,
+        hasAButton: false
     },
      {
         num: '02',
         title: t2,
-        description: d2
+        description: d2,
+        hasAButton: false
     },
     {
         num: '03',
         title: t3,
         description: d3,
-        btn: false
+        hasAButton: false
     }
 ]
