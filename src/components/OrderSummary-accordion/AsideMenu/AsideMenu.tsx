@@ -13,8 +13,8 @@ const AsideMenu = ({handleAccordion}:AsideProps) => {
           <ul>
              {
                 AsideList.map((item,index) => (
-                      <li key={index} onClick={() => handleAccordion(index)} className='mb-6 flex gap-4 items-center'>
-                        <span className='text-[#0E8784] font-bold'>{item}</span>
+                      <li key={index} onClick={() => handleAccordion(index)} className='mb-6 flex gap-4 items-center cursor-pointer'>
+                        <span className='text-[#0E8784] font-bold hover:text-green-400'>{item}</span>
                      </li>
                 ))
             }
