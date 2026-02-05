@@ -1,12 +1,16 @@
+import { useState } from 'react'
 import HeroContainer from '../../components/Hero/HeroSection'
 import { HeroBank } from '../../components/Hero/utils/HeroBank'
 import Steps from '../../assets/images/plan/desktop/bg-steps.png'
 import { BlackData } from '../../components/Data/NumData'
 import CustomCard from '../../components/Card/CustomCard'
 import Accordion from '../../components/OrderSummary-accordion/Accordion'
+import AsideMenu from '../../components/OrderSummary-accordion/AsideMenu/AsideMenu'
 
 const CreateYourPlan = () => {
-
+  
+  const [accordionOpen, setAccordionOpen] = useState<number|null>(null)
+  const handleAccordion = (campo: number | null) => accordionOpen === campo ? setAccordionOpen(null) : setAccordionOpen(campo)
   const title = 'Create a plan'
   const subtitle = 'Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.'
 
@@ -25,8 +29,10 @@ const CreateYourPlan = () => {
                                      }
                                   </div>
                  </section>
-                 <section className='bg-red-500'>
-                     <Accordion />
+                 <section className='flex flex-collg:flex-row lg:space-between p-25
+                  lg:justify-between w-full'>
+                      <div className='hidden lg:block  pt-9'><AsideMenu handleAccordion={handleAccordion} /></div>
+                      <div className=' w-full lg:w-[65vw] '><Accordion handleAccordion={handleAccordion} accordionOpen={accordionOpen} /></div>
                  </section>
         </main>
     </>
