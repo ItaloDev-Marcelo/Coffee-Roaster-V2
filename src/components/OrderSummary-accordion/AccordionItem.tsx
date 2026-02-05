@@ -6,11 +6,17 @@ const AccordionItem = ({handleAccordion,index,accordionOpen, children, data}:Acc
   return (
     <div>
         <div>
-            <div className='header flex flex-row space-between items-center' onClick={() => handleAccordion(index)}>
-              <p>{data.accordionTitle}</p> <div className={accordionOpen == index ? 
-                'rotate-180 delay-50 duration-300 ease-in-out' : 'flex delay-50 duration-300 ease-in-out'}> 
-                 <IconArrow /></div></div>
-            <div className={accordionOpen == index ? 'flex bg-blue-400 p-4 text-white' : 'hidden'}>
+            <div className='header flex flex-row   h-10 space-between items-center my-5' onClick={() => handleAccordion(index)}>
+             <div className='flex flex-row justify-between items-center  w-full'>
+                <div className='cursor-pointer'> <p className='mr-2.5 text-1.7xl text-gray-300 font-bold'>{data.accordionTitle}</p> </div>
+
+                 <div className={accordionOpen == index ? 
+                'rotate-180 delay-50 duration-300 ease-in-out scale-75 ' :
+                 'flex delay-50 duration-300 ease-in-out scale-75  '}> 
+                 <IconArrow /></div>
+            </div> 
+             </div>
+            <div className={accordionOpen == index ? 'flex  p-5 flex-col lg:flex-row gap-10 h-125 lg:h-60   text-white' : 'hidden'}>
               {children}
             </div>
         </div>
