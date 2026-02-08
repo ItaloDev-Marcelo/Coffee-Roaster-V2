@@ -1,17 +1,8 @@
 import UnitedKindomIcon from '../../../assets/images/about/desktop/illustration-uk.svg';
 import CanadaIcon from '../../../assets/images/about/desktop/illustration-canada.svg';
 import AustraliaIcon from '../../../assets/images/about/desktop/illustration-australia.svg';
+import type { Headquarters } from '../../../types/headquarters.type';
 
-
-
-type Headquarters = {
-    icon: string;
-    country: string;
-    city: string;
-    cityInfo: string;
-    address: string;
-    phone: string;
-}
 
 export const HeadquartersData:Headquarters[] = [
     {
