@@ -1,7 +1,4 @@
-
-type AsideProps = {
-   handleAccordion: (campo: number) => void 
-}
+import type { AsideProps } from "../../../types/Aside.type"
 
 const AsideMenu = ({handleAccordion}:AsideProps) => {
 
