@@ -28,8 +28,6 @@ const CreateYourPlan = () => {
     [name]: title
   })) 
 
-
-
   return ( 
     <>
        <main className='flex flex-col justify-center items-center '>
@@ -54,7 +52,7 @@ const CreateYourPlan = () => {
                         handleInfo={handleInfo} subInfo={subInfo}
                         />
                            <div className='relative  my-7 text-white'>
-                     <img src={ModalTop} alt='' className=' w-[90vw]  h-[300px] h-[99%] rounded-lg' />
+                     <img src={ModalTop} alt='' className=' w-[90vw]  h-[99%] rounded-lg' />
                      <div className='text-white absolute top-10 left-7 lg:left-10 '>
                        <h4 className='font-bold text-2xl mb-4'> Order summary</h4>
                        <p className='text-2xl font-semibold lg:text-3xl w-[85%] lg:w-[80%] leading-12  '>“ I drink my coffee as  <span className='text-[#0E8784] tracking-wide'>{subInfo.item1}</span> , with a  <span className='text-[#0E8784] tracking-wide'>{subInfo.item2}</span>  type of bean.
