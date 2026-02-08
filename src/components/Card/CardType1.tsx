@@ -1,19 +1,6 @@
+import type { CardType1Props } from "../../types/Card.types"
 
-
-export type CardType1Props = {
-    style: string;
-    space?: boolean;
-    imgSpace: string;
-    icon: string;
-    title: string;
-    description: string;
-}
-
-
-const CardType1 = ({style, space, imgSpace,icon, title,description}:CardType1Props) => {
-
-  console.log(space);
-
+const CardType1 = ({style,imgSpace,icon, title,description}:CardType1Props) => {
   return (
     <article className={style}>
          <figure>
