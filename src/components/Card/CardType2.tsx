@@ -1,12 +1,5 @@
+import type { CardType2Props } from "../../types/Card.types"
 import Button from "../Plan-Button/Button"
-
-
-export type CardType2Props = {
-    num: string | number;
-    title: string;
-    description: string;
-    hasAButton: boolean;
-}
 
 const CardType2 = ({num, title, description, hasAButton}:CardType2Props) => {
   return (
