@@ -5,16 +5,14 @@ import {OurCollectionData} from '../../components/Data/OurCollectionData'
 import { WhyChoose } from '../../components/Data/Whychoose'
 import WhyUse from '../../assets/images/plan/desktop/bg-steps.png'
 import { WhiteData } from '../../components/Data/NumData'
+import { HomeSub, HomeTitle } from './utils/Home.txt'
 const Home = () => {
-
-  const title = 'Great coffee made simple.'
-  const sub = 'Start your mornings with the world\'s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.'
 
   return (
     <>
       <main className='flex flex-col justify-center items-center  '>
           <HeroContainer photoType={HeroBank.Home} type='Home'
-           title={title} subtitle={sub} btnActive={true} />
+           title={HomeTitle} subtitle={HomeSub} btnActive={true} />
            <section className='relative text-center flex flex-col items-center justify-center  xl:-left-4 lg:my-10'>
                 <h2 className='font-bold text-4xl mt-15 mb-5 lg:mb-0 lg:mt-0  lg:text-[8rem] text-gray-500 lg:absolute left-[12%] top-[34%]'>our <br className='lg:hidden' />Collection</h2>
               <div className='flex flex-col lg:flex-row lg:space-between p-5 lg:p-10 my-2'>
