@@ -1,9 +1,4 @@
-
-type CustomImageProps = {
-  mobile: string
-  tablet: string
-  desk: string
-}
+import type { CustomImageProps } from "../../types/Custom.Image.type"
 
 const CustomImage = ({mobile,tablet,desk}:CustomImageProps) => {
   return (
