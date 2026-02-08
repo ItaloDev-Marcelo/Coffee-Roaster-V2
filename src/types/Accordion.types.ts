@@ -33,3 +33,11 @@ export type AccordionOptionProps = {
     data: subProps,
     subInfo: string
 }
+
+
+export type AccType = {
+  handleAccordion: (campo: number | null) => void;
+  accordionOpen: number | null,
+  handleInfo : (name: string, title: string) => void,
+  subInfo: SubInfoType
+}
