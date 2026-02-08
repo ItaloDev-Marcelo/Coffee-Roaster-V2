@@ -1,29 +1,18 @@
-import { useState } from 'react'
+import type { SubInfoType } from '../../types/Accordion.types';
 import AccordionItem from './AccordionItem'
 import AccordionOption from './AccordionOption'
 import { accordionData0 } from './Data/AccordionData'
-import type { SubInfoType } from '../../types/Accordion.types'
 
 type AccType = {
   handleAccordion: (campo: number | null) => void;
-  accordionOpen: number | null
+  accordionOpen: number | null,
+  handleInfo : (name: string, title: string) => void,
+  subInfo: SubInfoType
 }
 
-const Accordion = ({handleAccordion,accordionOpen}:AccType) => {
+const Accordion = ({handleAccordion,accordionOpen,  handleInfo, subInfo}:AccType) => {
 
-  const [subInfo, setSubInfo] = useState<SubInfoType>({
-    item1: '',
-    item2: '',
-    item3: '',
-    item4: '',
-    item5: ''
-  })
-
- 
-  const handleInfo = (name: string, title: string) =>  setSubInfo(prev => ({
-    ...prev,
-    [name]: title
-  })) 
+  
 
 
   return (
