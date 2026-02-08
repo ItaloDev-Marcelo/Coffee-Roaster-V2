@@ -3,9 +3,6 @@ import Planalto from '../../assets/images/home/desktop/image-planalto.png';
 import Piccollo from '../../assets/images/home/desktop/image-piccollo.png';
 import Danche from '../../assets/images/home/desktop/image-danche.png';
 
-// style, space, imgSpace,icon, title,description
-
-
 export const OurCollectionData = [
     {
         style: 'w-[200px] lg:w-[250px] text-center flex flex-col items-center justify-center my-7 lg:my-5 xl:my-0 z-1000' ,
