@@ -1,18 +1,10 @@
-import type { SubInfoType } from '../../types/Accordion.types';
+import type { AccType } from '../../types/Accordion.types'
 import AccordionItem from './AccordionItem'
 import AccordionOption from './AccordionOption'
 import { accordionData0 } from './Data/AccordionData'
 
-type AccType = {
-  handleAccordion: (campo: number | null) => void;
-  accordionOpen: number | null,
-  handleInfo : (name: string, title: string) => void,
-  subInfo: SubInfoType
-}
 
 const Accordion = ({handleAccordion,accordionOpen,  handleInfo, subInfo}:AccType) => {
-
-  
 
 
   return (
