@@ -1,6 +1,5 @@
 import {IconArrow} from '../../assets/images/svgAssetComponents/IconArrow.tsx'
 import type { AccordionItemProps } from '../../types/Accordion.types.ts';
-
 const AccordionItem = ({handleAccordion,index,accordionOpen, children, data}:AccordionItemProps) => {
 
   return (
