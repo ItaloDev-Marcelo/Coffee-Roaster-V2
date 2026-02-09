@@ -5,10 +5,7 @@ import { accordionData0 } from './Data/AccordionData'
 
 
 const Accordion = ({handleAccordion,accordionOpen,  handleInfo, subInfo}:AccType) => {
-
-
   return (
-
     <div>    
       <div>
        
