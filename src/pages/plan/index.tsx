@@ -8,6 +8,9 @@ import Accordion from '../../components/OrderSummary-accordion/Accordion'
 import AsideMenu from '../../components/OrderSummary-accordion/AsideMenu/AsideMenu'
 import ModalTop from '../../assets/images/plan/desktop/bg-order-summary.png'
 import type { SubInfoType } from '../../types/Accordion.types'
+import Footer from '../../components/Footer/Footer'
+import Container from '../../components/Footer/Container'
+import MainWrapper from '../../components/wrapper/MainWrapper'
 
 const CreateYourPlan = () => {
   
@@ -29,9 +32,9 @@ const CreateYourPlan = () => {
   })) 
 
   return ( 
-    <>
-       <main className='flex flex-col justify-center items-center '>
-                <HeroContainer photoType={HeroBank.Plan} type='Plan'
+    <> 
+       <MainWrapper>
+           <HeroContainer photoType={HeroBank.Plan} type='Plan'
                  title={title} subtitle={subtitle}  btnActive={false} />
                  <section className='relative px-5 lg:p-14.5 lg:left-[-1em]  my-7 text-white'>
                     <img src={Steps} className='w-screen  h-[240vh]  lg:h-[90vh] rounded-lg' />
@@ -42,8 +45,7 @@ const CreateYourPlan = () => {
                                       ))
                                      }
                                   </div>
-                 </section>
-                   
+                 </section>        
                  <section className='flex flex-col lg:flex-row lg:space-between p-20 lg:p-25
                   lg:justify-between w-full'>
                       <div className='hidden lg:block  pt-9'><AsideMenu handleAccordion={handleAccordion} /></div>
@@ -62,8 +64,10 @@ const CreateYourPlan = () => {
                  </div>
                         </div>
                  </section>
-            
-        </main>
+       </MainWrapper>
+        <Container>
+          <Footer/>
+        </Container>
     </>
   )
 }
