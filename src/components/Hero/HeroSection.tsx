@@ -8,7 +8,7 @@ const HeroContainer = ({photoType, type, title, subtitle,btnActive}:HeroContaine
   
   switch(type) {
     case 'Home': 
-     resultType = 'absolute top-20 text-center md:text-left md:top-15 lg:top-50 p-2 md:p-3 left-10 md:left-4 lg:left-24 lg:p-5 w-72 md:w-400 lg:w-150';
+     resultType = 'absolute top-30 text-center md:text-left md:top-15 lg:top-50 p-2 md:p-3 left-10 md:left-4 lg:left-24 lg:p-5 w-72 md:w-400 lg:w-150';
     break;
     case 'About':
      resultType = 'absolute top-20 text-center md:text-left md:top-15 lg:top-37 p-2 md:p-3 left-10 md:left-4 lg:left-24 lg:p-5 w-72 md:w-400 lg:w-150';
