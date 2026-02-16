@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className='relative text-white mb-7'>
            <div className='absolute -top-5 left-0 ' >
-             <img src={bg} alt='backgound' className='w-screen h-90 lg:h-25 rounded-md' />
+             <img src={bg} alt='backgound' className='w-screen h-97 lg:h-25 rounded-md' />
            </div>
      <div className='text-white absolute top-5 lg:top-0  w-full
       flex items-center justify-center lg:justify-between flex-col lg:flex-row px-25'>
@@ -18,7 +18,7 @@ const Footer = () => {
              <img src={LogoWhite} alt='footerLogo' />
          </div>
        <div>
-          <ul className='flex flex-col items-center  xl:flex-row gap-10 py-4'>
+          <ul className='flex flex-col items-center justify-center  lg:flex-row gap-10 py-4 w-38.75 lg:w-100 '>
            {
             NavFooter.map((item, index) => (
                 <li key={index} className='cursor-pointer hover:text-gray-900'>{item}</li>
