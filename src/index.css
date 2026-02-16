@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 
 @theme {
  --breakpoint-2xl: 90rem;
