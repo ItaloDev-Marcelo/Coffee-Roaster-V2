@@ -36,9 +36,10 @@ const CreateYourPlan = () => {
        <MainWrapper>
            <HeroContainer photoType={HeroBank.Plan} type='Plan'
                  title={title} subtitle={subtitle}  btnActive={false} />
-                 <section className='relative px-5 lg:p-14.5 lg:left-[-1em]  my-7 text-white'>
-                    <img src={Steps} className='w-screen  h-[240vh]  lg:h-[90vh] rounded-lg' />
-                     <div className=' flex flex-col lg:flex-row my-2 lg:my-0 gap-14 absolute top-25 left-25 lg:left-30 lg:top-50'>
+                 <section className='relative px-5 md:px-10 md:my-20 lg:p-14.5 xl:p-20 lg:left-[-1em] my-7 text-white'>
+                    <img src={Steps} className='w-screen  h-[220vh] md:h-[500px] xl:h-[550px]  rounded-lg' />
+                     <div className=' flex flex-col md:flex-row items-center justify-center  flex-wrap px-2 lg:px-0 lg:flex-row my-2 
+                      lg:my-0 gap-2 absolute top-5 lg:gap-x-19 xl:gap-x-15  lg:left-0 xl:left-30 xl:top-40 lg:top-20'>
                                      {
                                       BlackData.map((item,index) => (
                                          <CustomCard key={index} customType={2} data2={item}  />
@@ -46,18 +47,20 @@ const CreateYourPlan = () => {
                                      }
                                   </div>
                  </section>        
-                 <section className='flex flex-col lg:flex-row lg:space-between p-20 lg:p-25
+                 <section className='flex flex-col lg:flex-row lg:space-between p-7 lg:p-12 xl:p-25
                   lg:justify-between w-full'>
                       <div className='hidden lg:block  pt-9'><AsideMenu handleAccordion={handleAccordion} /></div>
-                      <div className=' w-full lg:w-[65vw] flex flex-col '>
+                      <div className=' w-full md:px-8 lg:w-[65vw] flex flex-col '>
                         <Accordion handleAccordion={handleAccordion} accordionOpen={accordionOpen}
                         handleInfo={handleInfo} subInfo={subInfo}
                         />
+                        
                            <div className='relative  my-7 text-white'>
-                     <img src={ModalTop} alt='' className=' w-[90vw]  h-[99%] rounded-lg' />
+                     <img src={ModalTop} alt='' className=' w-[90vw]   h-65   lg:h-[400px] rounded-lg' />
                      <div className='text-white absolute top-10 left-7 lg:left-10 '>
                        <h4 className='font-bold text-2xl mb-4'> Order summary</h4>
-                       <p className='text-2xl font-semibold lg:text-3xl w-[85%] lg:w-[80%] leading-12  '>“ I drink my coffee as  <span className='text-[#0E8784] tracking-wide'>{subInfo.item1}</span> , with a  <span className='text-[#0E8784] tracking-wide'>{subInfo.item2}</span>  type of bean.
+                       <p className='text-1.9xl font-semibold lg:text-3xl w-[86%]
+                        lg:w-[80%] leading-9 lg:leading-12 '>“ I drink my coffee as  <span className='text-[#0E8784] tracking-wide'>{subInfo.item1}</span> , with a  <span className='text-[#0E8784] tracking-wide'>{subInfo.item2}</span>  type of bean.
                          <span className='text-[#0E8784] tracking-wide'>{subInfo.item3}</span>  ground ala <span className='text-[#0E8784] tracking-wide'>{subInfo.item4}</span> , sent to me <span className='text-[#0E8784] tracking-wide'>{subInfo.item5}</span>. ”</p>
                      </div>
                      <p>    </p>
@@ -65,9 +68,11 @@ const CreateYourPlan = () => {
                         </div>
                  </section>
        </MainWrapper>
-        <Container>
+       <div className='px-5'>
+         <Container>
           <Footer/>
         </Container>
+       </div>
     </>
   )
 }
