@@ -4,11 +4,12 @@ import { HeroBank } from '../../components/Hero/utils/HeroBank'
 import {OurCollectionData} from '../../components/Data/OurCollectionData'
 import { WhyChoose } from '../../components/Data/Whychoose'
 import WhyUse from '../../assets/images/plan/desktop/bg-steps.png'
-import { WhiteData } from '../../components/Data/NumData'
+import { WhiteData } from '../../components/CustomImage/NumData'
 import { HomeSub, HomeTitle } from './utils/Home.txt'
 import Footer from '../../components/Footer/Footer'
 import Container from '../../components/Footer/Container'
 import MainWrapper from '../../components/wrapper/MainWrapper'
+import BubbleLine from '../../components/bubbleLine/BubbleLine'
 const Home = () => {
 
   return (
@@ -40,6 +41,7 @@ const Home = () => {
                <div className='flex flex-col md:flex-row md:flex-wrap md:gap-6
                 md:items-center md:justify-center space-between items-center relative -top-80
                 md:-top-40 md-3:-top-75 lg:-top-40 xl:left-0 px-3'>
+                  
                    {
                   WhyChoose.map((item, index) => (
                      <CustomCard key={index} customType={1} data1={item}  />
@@ -51,6 +53,7 @@ const Home = () => {
            <section className='flex flex-col justify-start items-start relative -top-50 
            md:top-30 md-3:-top-20 md-2:mb-30 md:mb-10 xl:mb-50 lg:top-30 xl:top-40 2xl:top-10 p-10 '>
               <h2 className='text-[2rem] font-bold lg:text-[3rem] mb-17'>How it works</h2>
+              <BubbleLine/>
               <div className=' flex flex-col md:flex-row md:flex-wrap justify-center items-center my-2 lg:my-0 md:gap-14 xl:gap-6'>
                  {
                   WhiteData.map((item,index) => (
