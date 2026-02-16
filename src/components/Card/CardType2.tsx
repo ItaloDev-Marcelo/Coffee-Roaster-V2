@@ -3,7 +3,7 @@ import Button from "../Plan-Button/Button"
 
 const CardType2 = ({num, title, description, hasAButton}:CardType2Props) => {
   return (
-    <article className='w-78 lg:w-75  my-4 lg:my-0 lg:mx-0'>
+    <article className='w-70 md:w-68 p-2 lg:p-0 lg:w-75  my-4 lg:my-0 lg:mx-0'>
          <h3 className='font-bold text-[7rem] lg:text-[6.5rem]'>{num}</h3>
          <h4 className="text-2xl font-semibold w-37.5 lg:w-75">{title}</h4>
          <p className="my-5">{description}</p>
