@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <nav className='flex flex-row lg:hidden h-20 justify-between items-center p-5'>
+      <nav className='flex flex-row lg:hidden h-20 justify-between items-center p-5 md-2:px-12'>
             <a href='#'><img src={Logo} alt='logo' className='w-37.5'/> </a> 
             <button onClick={handleNav}><img src={humburger} alt='humburger' /></button> 
       </nav>
