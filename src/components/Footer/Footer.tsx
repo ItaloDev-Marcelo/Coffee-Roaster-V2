@@ -7,8 +7,10 @@ import bg from '../../assets/images/plan/desktop/bg-order-summary.png'
 const Footer = () => {
     const NavFooter = ['Home', 'About us', 'Create your plan']
     const FooterSocialIcons = [LogoFacebook, LogoTwitter, LogoInstagram]
+    
   return (
     <footer className='relative text-white mb-7'>
+      
            <div className='absolute -top-5 left-0 ' >
              <img src={bg} alt='backgound' className='w-screen h-97 lg:h-25 rounded-md' />
            </div>
