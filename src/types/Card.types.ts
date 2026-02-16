@@ -8,6 +8,7 @@ export type CardType1Props = {
 
 
 export type CardType2Props = {
+    style?: string;
     num: string | number;
     title: string;
     description: string;
