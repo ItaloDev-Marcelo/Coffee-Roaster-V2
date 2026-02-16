@@ -7,9 +7,6 @@ import { accordionData0 } from './Data/AccordionData'
 const Accordion = ({handleAccordion,accordionOpen,  handleInfo, subInfo}:AccType) => {
   return (
     <div>    
-      <div>
-       
-      </div>
          <AccordionItem handleAccordion={handleAccordion} data={accordionData0[0]} index={0} accordionOpen={accordionOpen}> 
            {
              accordionData0[0].accordionItems.map(item => (
