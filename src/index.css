@@ -1,11 +1,17 @@
 @import "tailwindcss";
 
 
+@theme {
+ --breakpoint-2xl: 90rem;
+  --breakpoint-md-2: 50rem;
+  --breakpoint-md-3: 60rem;
+  --breakpoint-xmd-1: 120rem;
+}
+
+
+
+
 body {
   overflow-x:hidden;
 }
 
-
-@theme {
-  --breakpoint-2xl: 90rem;
-}
