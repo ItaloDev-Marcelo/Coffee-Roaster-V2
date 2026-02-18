@@ -8,30 +8,9 @@
   --breakpoint-xmd-1: 120rem;
 }
 
-@font-face {
-  font-family: 'Barlow';
-  src: url('../assets/images/fonts/barlow/Barlow-Regular.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
 
 
 
-@font-face {
-  font-family: 'Fraunces';
-  src: url('../assets/images/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-
-p, li {
-  font-family:  'Barlow'
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Fraunces'
-}
 
 
 
