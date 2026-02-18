@@ -74,12 +74,12 @@ const CreateYourPlan = () => {
                         />
                         
                            <div className='relative  my-7 text-white'>
-                     <img src={ModalTop} alt='' className=' w-[90vw]   h-75 md:h-65   lg:h-100 xl:h-87.5  rounded-lg' />
+                     <img src={ModalTop} alt='' className=' w-[90vw]   h-75 md:h-65   lg:h-100 xl:h-70  rounded-lg' />
                      <div className='text-white absolute top-10 left-7 lg:left-10 '>
                        <div className='relative'>
                            <h4 className='font-bold text-2xl mb-4'> Order summary</h4>
-                       <p className='text-1.9xl font-semibold lg:text-3xl w-[86%]
-                        lg:w-[80%] leading-9 lg:leading-12 '>“ I drink my coffee as  <span className='text-[#0E8784] tracking-wide'>{subInfo.item1}</span> , with a  <span className='text-[#0E8784] tracking-wide'>{subInfo.item2}</span>  type of bean.
+                       <p className='text-1.9xl font-semibold lg:text-3xl w-[90%] md:w-[86%]
+                        lg:w-[90%] leading-9 lg:leading-12 '>“ I drink my coffee as  <span className='text-[#0E8784] tracking-wide'>{subInfo.item1}</span> , with a  <span className='text-[#0E8784] tracking-wide'>{subInfo.item2}</span>  type of bean.
                          <span className='text-[#0E8784] tracking-wide'>{subInfo.item3}</span>  ground ala <span className='text-[#0E8784] tracking-wide'>{subInfo.item4}</span> , sent to me <span className='text-[#0E8784] tracking-wide'>{subInfo.item5}</span>. ”</p>
                      </div>
                      <p>    </p>

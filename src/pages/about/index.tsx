@@ -27,9 +27,9 @@ const AboutUs = () => {
                   </section>
                </div>
                <div className='my-4 lg:my-25 '>
-                  <section className='flex flex-col-reverse lg:flex-row-reverse
-                   lg:space-between text-center lg:text-left items-center p-20'>
-                  
+                  <section className='flex flex-col-reverse relative lg:flex-row-reverse
+                   lg:space-between text-center lg:text-left items-center p-20 '>
+                        
                        <div className='mt-10  w-70 xl:w-120'>
                          <CustomImage mobile={ImageBank.Quality.mobile}
                         tablet={ImageBank.Quality.tablet}
